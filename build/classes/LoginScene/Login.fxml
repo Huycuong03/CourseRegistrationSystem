@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="480.0" styleClass="home-background" stylesheets="@../view/default_style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginScene.LoginController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="91.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../view/book_icon.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="60.0" prefHeight="50.0" prefWidth="215.0" text="OFCOURSE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="162.0" prefHeight="26.0" prefWidth="70.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="208.0" prefHeight="26.0" prefWidth="70.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="168.0" layoutY="162.0" onAction="#focusToPasswordField" prefHeight="26.0" prefWidth="230.0" styleClass="round-text-field" stylesheets="@../view/default_style.css" />
+      <PasswordField fx:id="passwordField" layoutX="168.0" layoutY="208.0" onAction="#tryLogin" prefHeight="26.0" prefWidth="230.0" styleClass="round-text-field" stylesheets="@../view/default_style.css" />
+   </children>
+</AnchorPane>
